@@ -1,0 +1,16 @@
+<div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 mx-auto collection">
+    <a href="javascript:void(0)" onclick="ShowResourcesPopup(<%= TheCollection.ID %>)">
+        <h3 class="title text-start"><%= TheCollection.Title %></h3>
+        <% if(TheCollection.Res_col_img.length){ %>
+            <img class="img Res_col_img" src=<%= TheCollection.Res_col_img %> alt="Collection">
+        <% }else{ %>
+            <br><br>
+            <p class="description fs-4"><%=TheCollection.Description%></p>
+        <% } %>
+        </a>
+</div>
+<% CollectionFormID = TheCollection.ID+"_Collection_ID" %>
+<form id=<%= CollectionFormID %> class="disabled"  action="/collection" method="post" disabled>
+    <input type="hidden" name="Links" id="Links" value = <%= TheCollection.ID %> >
+</form>
+

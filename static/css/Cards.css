@@ -1,0 +1,53 @@
+
+/* cards */
+.collection{
+    margin: 1em;
+    display: block;
+}
+.collection>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: .3em;
+    box-shadow: 0 0 5px 1px black;
+    padding: 1em;
+    color: gray;
+}
+
+.collection h3.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    align-self: start;
+}
+.collection:hover h3.title{
+    text-shadow: 1px 1px 2px rgb(200, 200, 200);
+}
+.collection img.img.Res_col_img{
+    width: 100%;
+    filter: blur(0);
+    transition: all .3s;
+    box-shadow: 0 0 3px 1px gray;
+}
+.collection:hover img.img.Res_col_img{
+    filter: blur(.03em);
+    border-radius: .3em;
+    transform: scale(1.02);
+}
+.collection.CreateNewCollection img.img.Res_col_img{
+    border-radius: 50%;
+    box-shadow: 0 0 3px 1px gray;
+    filter: blur(0);
+    transition: all .3s;
+}
+.collection.CreateNewCollection:hover img.img.Res_col_img{
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px gray;
+    filter: blur(.03em);
+    transform: scale(1.02);
+}
+.collection .description{
+    color: gray;
+}
+

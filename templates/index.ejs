@@ -1,0 +1,53 @@
+<%- include('Layouts/header') -%>
+<%- include('Layouts/navbar', {from_route:"Home"}) -%>
+<div class="container-fluid my-5 pt-5 header_description" >
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <h2>WELL COME .</h2>
+        </div>
+        <div class="col-9 mx-auto">
+            <h5 class="">MyWebsite is informing you about the online resources you have no Idea about there existance to help you improve your skill as students or use them in your projects for best quality results.</h5>
+        </div>
+    </div>
+</div>
+<div class="container-fluid my-5">
+    <div class="row mx-auto">
+        <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-3 mx-auto collection CreateNewCollection">
+            <a href="javascript:void(0)" onclick="CreateNewCollection()">
+                <h3 class="title text-start">Create new collection</h3>
+                <img class="img Res_col_img" src="imgs/Create_New_Collection.gif" alt="Add new collection">
+            </a>
+        </div>
+        
+        <% for(var i = 0; i < collections.length; i++){ %>
+            <%- include("Popups/collection" , {TheCollection:collections[i]}); -%>
+        <% }; %>
+    </div>
+</div>
+
+<%- include('Layouts/footer') -%>
+
+<!-- <% if(linksResults.length){ %> -->
+    <div class="popup disable" id="Collection_links">
+        <div class="progress_container mx-auto">
+            <div class="progress_bar" id="ProgressBar"></div>
+            <a href="javascript:void(0)" onclick="popupChangeblure('Collection_links')" class="fs-2 fw-bolder"><span>X</span></a>
+        </div>
+        <div class="container">
+            <p> these are the linksResults</p>
+            <% for( var i = 0 ; i < linksResults.length; i++){ %>
+                <h3><%= linksResults[i].Name %></h3>
+                <p><%= linksResults[i].Description %></p>
+                <a href=<%= linksResults[i].Link %> target="_blank" ><%= linksResults[i].Link %></a>
+            <% } %>
+        </div>
+    </div>
+<!-- <% } %> -->
+<div class="popup disable" id="Create_New_Collection">
+    <div class="container">
+        <div class="CreateNewCollection">
+
+        </div>
+    </div>
+</div>
+<%- include('Layouts/includeScripts') -%>

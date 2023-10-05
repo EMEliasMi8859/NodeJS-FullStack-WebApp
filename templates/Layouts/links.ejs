@@ -1,0 +1,9 @@
+<div class="container">
+    <p> these are the links</p>
+    <% for( var i = 0 ; i < results.length; i++){ %>
+        <h3><%= results[i].Name %></h3>
+        <p><%= results[i].Description %></p>
+        <a href=<%= results[i].Link %> target="_blank" ><%= results[i].Link %></a>
+    <% } %>
+</div>
+

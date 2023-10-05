@@ -1,0 +1,33 @@
+body, header, section, aside, article, div, a, img, span, ul, li, ol, p, table, form, thead, tbody, th, tr, td, dt, dd{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* navbar */
+nav.navbar > div > ul > li > a{
+    width: 6.5em;
+}nav.navbar > div > ul > li > a.active::after,
+a#User_Profile.active > img::after{
+    content: url(../imgs/icons/current-active.png);
+}#navbar_nav > a > img::after{
+    content: url(../imgs/icons/current-active.png);
+}
+
+
+.header_description{
+    padding: 3em;
+}
+.header_description h2{
+    color: rgb(130, 130, 130);
+    font-weight: bolder;
+    text-shadow: 0 0 2px rgb(150, 150, 150);
+}
+.header_description h5{
+    color: rgb(150, 150, 150);
+}

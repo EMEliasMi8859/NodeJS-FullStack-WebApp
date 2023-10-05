@@ -1,0 +1,73 @@
+
+/* ResourcesBox Popup */
+.progress_container > a{
+    position: relative;
+    color: rgba(114, 24, 8, 0.74);
+    left: 97%;
+}
+
+.popup::-webkit-scrollbar {
+    display: none;
+}
+
+.progress_container {
+    height: 0.3em;
+    position: sticky;
+    top: 0.3em;
+    z-index: 1;
+    width: 95%;
+    background-color: rgba(205, 205, 205, 0.59);
+    -webkit-border-radius: .1em;
+    -moz-border-radius: .1em;
+    border-radius: .1em;
+}
+
+.progress_bar {
+    height: 0.3em;
+    background: #2e8a1a;
+    width: 0;
+    -webkit-border-radius: .1em;
+    -moz-border-radius: .1em;
+    border-radius: .1em;
+}
+
+
+
+div.main-container.disable{
+    filter: blur(.3em);
+}
+div.main-container.active{
+    filter: blur(0);
+}
+div.popup.active{
+    position: absolute;
+    height: 90vh;
+    width: 90vw;
+    place-items: center;
+    left: 50%;
+    top:5%;
+    -webkit-transform: translateY(-55%);
+    -moz-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    -o-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.11);
+    -webkit-box-shadow: 0px 0px 3px 1px #404040;
+    -moz-box-shadow: 0px 0px 3px 1px #404040;
+    box-shadow: 0px 0px 3px 1px #404040;
+    overflow: auto;
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+}
+div.popup.disable{
+    display: none;
+}
+.disabled{
+    display: none;
+}

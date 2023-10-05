@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="css/Cards.css">
+<link rel="stylesheet" href="css/Popups.css">
+</head>
+<body>
+
+    <div class="main-container active" id="main-container">
+            
+        <nav class="navbar navbar-expand-md navbar-light px-3">
+            <a href="#" class="navbar-brand">
+                <img class="" src="imgs/icons/logo.gif" alt="Logo" width = "35" height="35">
+                <span class="brand-name">MyWebsite</span>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" type="button" data-bs-target="#navbar_nav" area-expaned="true">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse align-items-start ps-5 ps-sm-5 ps-md-0" id="navbar_nav">
+                <ul class="navbar-nav text-md-center">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/Dashboard" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="/Favorites" class="nav-link">Favorites</a></li>
+                    <li class="nav-item"><a href="/About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="/Contact" class="nav-link">Contact us</a></li>
+                </ul>
+                <a href="/Account"  id="User_Profile" class="ms-0 ms-lg-auto ms-md-auto">
+                    <img src="imgs/icons/ACC_PIC.png"  width="35" height="35" alt="profile">
+                </a>
+            </div>
+        </nav>
+        <span id="from_route" class="d-none" hidden><%= from_route %></span>
